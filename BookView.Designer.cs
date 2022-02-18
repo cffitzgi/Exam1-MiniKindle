@@ -1,7 +1,7 @@
 ﻿
 namespace Exam1_MiniKindle
 {
-    partial class ReaderView
+    partial class BookView
     {
         /// <summary>
         /// Required designer variable.

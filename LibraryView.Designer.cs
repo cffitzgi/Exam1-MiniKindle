@@ -35,18 +35,20 @@ namespace Exam1_MiniKindle
             // listViewBooks
             // 
             this.listViewBooks.HideSelection = false;
-            this.listViewBooks.Location = new System.Drawing.Point(12, 12);
+            this.listViewBooks.Location = new System.Drawing.Point(16, 15);
+            this.listViewBooks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewBooks.Name = "listViewBooks";
-            this.listViewBooks.Size = new System.Drawing.Size(776, 124);
+            this.listViewBooks.Size = new System.Drawing.Size(1033, 152);
             this.listViewBooks.TabIndex = 0;
             this.listViewBooks.UseCompatibleStateImageBehavior = false;
             // 
             // LibraryView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 191);
             this.Controls.Add(this.listViewBooks);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LibraryView";
             this.Text = "Library";
             this.ResumeLayout(false);

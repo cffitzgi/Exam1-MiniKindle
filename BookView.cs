@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Exam1_MiniKindle
 {
-    public partial class ReaderView : Form
+    public partial class BookView : Form
     {
-        public ReaderView()
+        public BookView()
         {
             InitializeComponent();
         }
