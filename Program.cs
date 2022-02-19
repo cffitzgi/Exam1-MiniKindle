@@ -6,6 +6,12 @@ using System.Windows.Forms;
 
 namespace Exam1_MiniKindle
 {
+    public delegate void FlipPageHandler(bool dir);
+
+    public delegate void RefresherDel();
+
+    public delegate void BookMkHandler();
+
     static class Program
     {
         /// <summary>
