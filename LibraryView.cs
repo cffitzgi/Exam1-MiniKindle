@@ -12,6 +12,12 @@ namespace Exam1_MiniKindle
 {
     public partial class LibraryView : Form
     {
+        private Library library;
+
+        private BookView bookView;
+
+        BookHandler bookHand;
+
         public LibraryView()
         {
             InitializeComponent();

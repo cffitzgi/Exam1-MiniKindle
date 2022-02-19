@@ -12,9 +12,21 @@ namespace Exam1_MiniKindle
 {
     public partial class BookView : Form
     {
+        Book curBook;
+
+        FlipPageHandler fpHand;
+
+        BookMarkHandler bmHand;
+
         public BookView()
         {
             InitializeComponent();
+        }
+    
+        
+        public void Refresh()
+        {
+
         }
     }
 }
