@@ -16,17 +16,21 @@ namespace Exam1_MiniKindle
 
         FlipPageHandler fpHand;
 
-        BookMarkHandler bmHand;
+        BookMkHandler bmHand;
+
+        DisplayPageHandler dpHand;
 
         public BookView()
         {
             InitializeComponent();
+
+            dpHand = curBook.DisplayPage;
         }
     
         
         public void Refresh()
         {
-
+            dpHand();
         }
     }
 }

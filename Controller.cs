@@ -14,9 +14,11 @@ namespace Exam1_MiniKindle
 
         private RefresherDel refresherDel;
 
+        private DisplayPageHandler dpHand;
+
         public Controller()
         {
-
+            dpHand = currBook.DisplayPage;
         }
 
         public void FlipPage(bool dir)
@@ -33,5 +35,6 @@ namespace Exam1_MiniKindle
         {
             library.SelectBook(i);
         }
+
     }
 }

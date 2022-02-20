@@ -16,7 +16,7 @@ namespace Exam1_MiniKindle
 
         private BookView bookView;
 
-        BookHandler bookHand;
+        BookMkHandler bookHand;
 
         public LibraryView()
         {

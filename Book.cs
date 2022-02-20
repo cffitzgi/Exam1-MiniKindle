@@ -53,6 +53,19 @@ namespace Exam1_MiniKindle
             }
         }
 
+        public string DisplayPage()
+        {
+            if(bookmarks.Count >= 1)
+            {
+                currentPage = bookmarks[0];
+            }
+            else
+            {
+                currentPage = 0;
+            }
+            return pages[currentPage];
+        }
+
         public override string ToString()
         {
             return String.Format("{0} {1}", title, author);

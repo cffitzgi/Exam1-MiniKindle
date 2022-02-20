@@ -12,6 +12,8 @@ namespace Exam1_MiniKindle
 
     public delegate void BookMkHandler();
 
+    public delegate string DisplayPageHandler();
+
     static class Program
     {
         /// <summary>
