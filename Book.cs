@@ -45,6 +45,8 @@ namespace Exam1_MiniKindle
                 int bm;
                 foreach (string s in bmString)
                 {
+                    if (s.Length < 1) continue;
+
                     bm = int.Parse(s);
                     if (bm > 0)
                         bookmarks.Add(bm);

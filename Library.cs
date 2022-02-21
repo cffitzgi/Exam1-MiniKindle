@@ -11,15 +11,20 @@ namespace Exam1_MiniKindle
     {
         private List<Book> library;
 
+        public Library()
+        {
+            library = new List<Book>();
+        }
+
         public void LoadLibrary(string path)
         {
             string[] filenames = Directory.GetFiles(path);
             foreach (string fn in filenames)
             {
                 Book newBook = new Book();
-                newBook.LoadBook(path + fn);
+                newBook.LoadBook(fn);
+                library.Add(newBook);
             }
-//TODO: Read each filename in path, and for each filename
         }
 
         public Book SelectBook(int i)

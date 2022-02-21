@@ -37,10 +37,10 @@ namespace Exam1_MiniKindle
             // Loads books into library
             controller.LoadLibrary("Books");
 
-            LibraryView libView = new LibraryView();
-//TODO: Instantiate LibraryView, set it's controller, 
+            LibraryView libView = new LibraryView(controller);
 
-            // Debugging purposes
+
+            /* Debugging purposes
             Book book = new Book();
             book.LoadBook("Books/BookOne-AuthorPerson.txt");
 
@@ -49,8 +49,8 @@ namespace Exam1_MiniKindle
             BookView bookView = new BookView(controller);
 
             bookView.RefreshPage();
-
-            Application.Run(bookView);
+            //*/
+            Application.Run(libView);
         }
     }
 }

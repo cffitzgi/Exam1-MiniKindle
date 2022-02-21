@@ -79,6 +79,11 @@ namespace Exam1_MiniKindle
             library.LoadLibrary(path);
         }
 
+        public List<String> DisplayLibrary()
+        {
+            return library.Display();
+        }
+
         //Debugging purposes
         public void SelectBook(Book b)
         {

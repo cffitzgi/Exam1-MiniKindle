@@ -23,5 +23,16 @@ namespace Exam1_MiniKindle
         {
             InitializeComponent();
         }
+
+        public LibraryView(Controller c)
+        {
+            InitializeComponent();
+
+            controller = c;
+            List<String> books = c.DisplayLibrary();
+            foreach(string t in books)
+                listViewBooks.Items.Add(t);
+        }
+
     }
 }
