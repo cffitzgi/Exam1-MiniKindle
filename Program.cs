@@ -49,18 +49,6 @@ namespace Exam1_MiniKindle
 
             LibraryView libView = new LibraryView(dpHand, taHand, fpHand, bmHand, cpmHand, dlHand, sbHand);
 
-
-            /* Debugging purposes
-            Book book = new Book();
-            book.LoadBook("Books/BookOne-AuthorPerson.txt");
-
-            controller.SelectBook(book);
-
-            BookView bookView = new BookView(controller);
-
-            bookView.RefreshPage();
-            //*/
-
             Application.Run(libView);
         }
     }
