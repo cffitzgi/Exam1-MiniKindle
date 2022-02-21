@@ -91,5 +91,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Books\BookOne-AuthorPerson.txt" />
+    <Content Include="Books\ThreesCompany-FirstLast.txt" />
+    <Content Include="Books\TwoTwo-PersonLastname.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

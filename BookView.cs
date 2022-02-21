@@ -22,28 +22,56 @@ namespace Exam1_MiniKindle
 
         DisplayPageHandler dpHand;
 
-        public BookView()
+
+        // New Handlers Added
+        CurrentPageMarkedHandler cpmHand;
+
+        GetTitleAuthorHandler taHand;
+
+
+        public BookView(Controller c)
         {
             InitializeComponent();
 
-            dpHand = controller.DisplayPage;
-            fpHand = curBook.FlipPage;
-            bmHand = curBook.AddRemBkMk;
-        }
-        
-        public void SetController(Controller c)
-        {
             controller = c;
+
+            dpHand = controller.DisplayPage;
+            taHand = controller.GetBookTitleAuthor;
+            fpHand = controller.FlipPage;
+            bmHand = controller.BookMark;
+            cpmHand = controller.CurrentPageMarked;
+
         }
         
-        public void Refresh()
+        
+        public void RefreshPage()
         {
-            PageDisplay.Text = dpHand();
+            this.Text = taHand();
+
+            labelPageDisplay.Text = dpHand();
+
+            if (cpmHand())
+                buttonBookmark.Text = "Unbookmark";
+            else
+                buttonBookmark.Text = "Bookmark";
         }
 
         private void buttonNextPage_Click(object sender, EventArgs e)
         {
             fpHand(true);
+            RefreshPage();
+        }
+
+        private void buttonPreviousPage_Click(object sender, EventArgs e)
+        {
+            fpHand(false);
+            RefreshPage();
+        }
+
+        private void buttonBookmark_Click(object sender, EventArgs e)
+        {
+            bmHand();
+            RefreshPage();
         }
     }
 }
