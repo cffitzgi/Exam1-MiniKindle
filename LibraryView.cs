@@ -12,27 +12,50 @@ namespace Exam1_MiniKindle
 {
     public partial class LibraryView : Form
     {
-        //private Library library;
-        private Controller controller;
-
         private BookView bookView;
 
-        BookMkHandler bookHand;
+        DisplayPageHandler dpHand;
 
-        public LibraryView()
+        GetTitleAuthorHandler taHand;
+
+        FlipPageHandler fpHand;
+
+        BookMkHandler bmHand;
+
+        CurrentPageMarkedHandler cpmHand;
+
+        DisplayLibraryHandler dlHand;
+
+        SelectBookHandler sbHand;
+
+
+        public LibraryView(DisplayPageHandler dp, GetTitleAuthorHandler ta, FlipPageHandler fp, BookMkHandler bm, CurrentPageMarkedHandler cpm,
+            DisplayLibraryHandler dl, SelectBookHandler sb)
         {
             InitializeComponent();
-        }
 
-        public LibraryView(Controller c)
-        {
-            InitializeComponent();
+            dpHand = dp;
+            taHand = ta;
+            fpHand = fp;
+            bmHand = bm;
+            cpmHand = cpm;
+            dlHand = dl;
+            sbHand = sb;
 
-            controller = c;
-            List<String> books = c.DisplayLibrary();
+            List<String> books = dlHand();
             foreach(string t in books)
                 listViewBooks.Items.Add(t);
         }
 
+        private void listViewBooks_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listViewBooks.SelectedItems.Count == 0) return;
+
+            sbHand(listViewBooks.Items.IndexOf(listViewBooks.SelectedItems[0]));
+            bookView = new BookView(dpHand, taHand, fpHand, bmHand, cpmHand);
+            bookView.RefreshPage();
+            bookView.ShowDialog();
+
+        }
     }
 }

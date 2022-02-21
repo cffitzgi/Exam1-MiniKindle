@@ -8,16 +8,17 @@ namespace Exam1_MiniKindle
 {
     public delegate void FlipPageHandler(bool dir);
 
-    //public delegate void RefresherDel();
-
     public delegate void BookMkHandler();
 
     public delegate String DisplayPageHandler();
 
-    // New Delegate
     public delegate bool CurrentPageMarkedHandler();
 
     public delegate String GetTitleAuthorHandler();
+
+    public delegate List<String> DisplayLibraryHandler();
+
+    public delegate void SelectBookHandler(int i);
 
     static class Program
     {
@@ -34,17 +35,19 @@ namespace Exam1_MiniKindle
             // Creates controller.
             Controller controller = new Controller();
 
+            DisplayPageHandler dpHand = controller.DisplayPage;
+            GetTitleAuthorHandler taHand = controller.GetBookTitleAuthor;
             FlipPageHandler fpHand = controller.FlipPage;
             BookMkHandler bmHand = controller.Bookmark;
-            DisplayPageHandler dpHand = controller.DisplayPage;
             CurrentPageMarkedHandler cpmHand = controller.CurrentPageMarked;
-            GetTitleAuthorHandler taHand = controller.GetBookTitleAuthor;
+            DisplayLibraryHandler dlHand = controller.DisplayLibrary;
+            SelectBookHandler sbHand = controller.SelectBook;
 
 
             // Loads books into library
             controller.LoadLibrary("Books");
 
-            LibraryView libView = new LibraryView(controller);
+            LibraryView libView = new LibraryView(dpHand, taHand, fpHand, bmHand, cpmHand, dlHand, sbHand);
 
 
             /* Debugging purposes

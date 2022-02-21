@@ -9,6 +9,9 @@ C:\Users\cffit\Source\Repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.G
 C:\Users\cffit\Source\Repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.CoreCompileInputs.cache
 C:\Users\cffit\Source\Repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.exe
 C:\Users\cffit\Source\Repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.pdb
+C:\Users\cfitt\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.exe.config
+C:\Users\cfitt\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.exe
+C:\Users\cfitt\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.pdb
 C:\Users\cfitt\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.AssemblyReference.cache
 C:\Users\cfitt\source\repos\Exam1-MiniKindle\obj\Debug\Exam1_MiniKindle.LibraryView.resources
 C:\Users\cfitt\source\repos\Exam1-MiniKindle\obj\Debug\Exam1_MiniKindle.BookView.resources
@@ -17,6 +20,3 @@ C:\Users\cfitt\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.G
 C:\Users\cfitt\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.CoreCompileInputs.cache
 C:\Users\cfitt\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.exe
 C:\Users\cfitt\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.pdb
-C:\Users\cfitt\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.exe.config
-C:\Users\cfitt\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.exe
-C:\Users\cfitt\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.pdb

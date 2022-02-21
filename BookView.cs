@@ -33,7 +33,6 @@ namespace Exam1_MiniKindle
             fpHand = fp;
             bmHand = bm;
             cpmHand = cpm;
-
         }
         
         
