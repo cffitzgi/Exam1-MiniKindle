@@ -16,7 +16,7 @@ namespace Exam1_MiniKindle
             library = new List<Book>();
         }
 
-        public void LoadLibrary(string path)
+        public void LoadLibrary(String path)
         {
             string[] filenames = Directory.GetFiles(path);
             foreach (string fn in filenames)

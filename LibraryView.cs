@@ -14,19 +14,19 @@ namespace Exam1_MiniKindle
     {
         private BookView bookView;
 
-        DisplayPageHandler dpHand;
+        private DisplayPageHandler dpHand;
 
-        GetTitleAuthorHandler taHand;
+        private GetTitleAuthorHandler taHand;
 
-        FlipPageHandler fpHand;
+        private FlipPageHandler fpHand;
 
-        BookMkHandler bmHand;
+        private BookMkHandler bmHand;
 
-        CurrentPageMarkedHandler cpmHand;
+        private CurrentPageMarkedHandler cpmHand;
 
-        DisplayLibraryHandler dlHand;
+        private DisplayLibraryHandler dlHand;
 
-        SelectBookHandler sbHand;
+        private SelectBookHandler sbHand;
 
 
         public LibraryView(DisplayPageHandler dp, GetTitleAuthorHandler ta, FlipPageHandler fp, BookMkHandler bm, CurrentPageMarkedHandler cpm,

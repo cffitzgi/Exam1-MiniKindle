@@ -13,15 +13,15 @@ namespace Exam1_MiniKindle
     public partial class BookView : Form
     {
 
-        FlipPageHandler fpHand;
+        private FlipPageHandler fpHand;
 
-        BookMkHandler bmHand;
+        private BookMkHandler bmHand;
 
-        DisplayPageHandler dpHand;
+        private DisplayPageHandler dpHand;
 
-        CurrentPageMarkedHandler cpmHand;
+        private CurrentPageMarkedHandler cpmHand;
 
-        GetTitleAuthorHandler taHand;
+        private GetTitleAuthorHandler taHand;
 
 
         public BookView(DisplayPageHandler dp, GetTitleAuthorHandler ta, FlipPageHandler fp, BookMkHandler bm, CurrentPageMarkedHandler cpm)

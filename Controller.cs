@@ -12,10 +12,6 @@ namespace Exam1_MiniKindle
 
         private Book currBook;
 
-        //private RefresherDel refresherDel;
-
-        //private DisplayPageHandler dpHand;
-
         public Controller()
         {
             library = new Library();
@@ -74,7 +70,7 @@ namespace Exam1_MiniKindle
             currBook = library.SelectBook(i);
         }
 
-        public void LoadLibrary(string path)
+        public void LoadLibrary(String path)
         {
             library.LoadLibrary(path);
         }
@@ -82,12 +78,6 @@ namespace Exam1_MiniKindle
         public List<String> DisplayLibrary()
         {
             return library.Display();
-        }
-
-        //Debugging purposes
-        public void SelectBook(Book b)
-        {
-            currBook = b;
         }
 
     }
