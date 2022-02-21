@@ -19,7 +19,8 @@ namespace Exam1_MiniKindle
 
         BookMkHandler bookHand;
 
-        public LibraryView()
+        public LibraryView(DisplayPageHandler dp, GetTitleAuthorHandler ta, FlipPageHandler fp, BookMkHandler bm, 
+            CurrentPageMarkedHandler cpm, DisplayLibraryHandler dl, SelectBookHandler sb)
         {
             InitializeComponent();
         }
