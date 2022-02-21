@@ -9,3 +9,15 @@ C:\Users\cffit\Source\Repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.G
 C:\Users\cffit\Source\Repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.CoreCompileInputs.cache
 C:\Users\cffit\Source\Repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.exe
 C:\Users\cffit\Source\Repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.pdb
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.AssemblyReference.cache
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.SuggestedBindingRedirects.cache
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1_MiniKindle.LibraryView.resources
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1_MiniKindle.BookView.resources
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1_MiniKindle.Properties.Resources.resources
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.GenerateResource.cache
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.csproj.CoreCompileInputs.cache
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.exe
+C:\Users\awilb\source\repos\Exam1-MiniKindle\obj\Debug\Exam1-MiniKindle.pdb
+C:\Users\awilb\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.exe.config
+C:\Users\awilb\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.exe
+C:\Users\awilb\source\repos\Exam1-MiniKindle\bin\Debug\Exam1-MiniKindle.pdb

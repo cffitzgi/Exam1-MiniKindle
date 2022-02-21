@@ -34,5 +34,10 @@ namespace Exam1_MiniKindle
                 listViewBooks.Items.Add(t);
         }
 
+        private void listViewBooks_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            controller.SelectBook(listViewBooks.SelectedItems.IndexOf(listViewBooks.SelectedItems[0]));
+            bookView.labelPageDisplay =  controller.DisplayPage();
+        }
     }
 }
