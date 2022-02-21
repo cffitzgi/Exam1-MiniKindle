@@ -3,12 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Exam1_MiniKindle
 {
     public class Library
     {
         private List<Book> library;
+
+        public Library()
+        {
+            library = new List<Book>();
+        }
+
+        public void LoadLibrary(string path)
+        {
+            string[] filenames = Directory.GetFiles(path);
+            foreach (string fn in filenames)
+            {
+                Book newBook = new Book();
+                newBook.LoadBook(fn);
+                library.Add(newBook);
+            }
+        }
 
         public Book SelectBook(int i)
         {

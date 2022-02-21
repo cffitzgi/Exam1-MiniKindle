@@ -8,11 +8,16 @@ namespace Exam1_MiniKindle
 {
     public delegate void FlipPageHandler(bool dir);
 
-    public delegate void RefresherDel();
+    //public delegate void RefresherDel();
 
     public delegate void BookMkHandler();
 
-    public delegate string DisplayPageHandler();
+    public delegate String DisplayPageHandler();
+
+    // New Delegate
+    public delegate bool CurrentPageMarkedHandler();
+
+    public delegate String GetTitleAuthorHandler();
 
     static class Program
     {
@@ -22,9 +27,38 @@ namespace Exam1_MiniKindle
         [STAThread]
         static void Main()
         {
+            //Windows Forms Stuff
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LibraryView());
+
+            // Creates controller.
+            Controller controller = new Controller();
+
+            FlipPageHandler fpHand = controller.FlipPage;
+            BookMkHandler bmHand = controller.Bookmark;
+            DisplayPageHandler dpHand = controller.DisplayPage;
+            CurrentPageMarkedHandler cpmHand = controller.CurrentPageMarked;
+            GetTitleAuthorHandler taHand = controller.GetBookTitleAuthor;
+
+
+            // Loads books into library
+            controller.LoadLibrary("Books");
+
+            LibraryView libView = new LibraryView(controller);
+
+
+            /* Debugging purposes
+            Book book = new Book();
+            book.LoadBook("Books/BookOne-AuthorPerson.txt");
+
+            controller.SelectBook(book);
+
+            BookView bookView = new BookView(controller);
+
+            bookView.RefreshPage();
+            //*/
+
+            Application.Run(libView);
         }
     }
 }
