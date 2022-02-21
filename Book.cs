@@ -13,11 +13,11 @@ namespace Exam1_MiniKindle
 
         private int currentPage;
 
-        private string author;
+        private String author;
 
         private List<int> bookmarks;
 
-        private string title;
+        private String title;
 
 //TODO: Might be best to use either the string data-type or String object consistently.
 

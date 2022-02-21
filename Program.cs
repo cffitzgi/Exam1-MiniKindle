@@ -8,7 +8,7 @@ namespace Exam1_MiniKindle
 {
     public delegate void FlipPageHandler(bool dir);
 
-    public delegate void RefresherDel();
+    //public delegate void RefresherDel();
 
     public delegate void BookMkHandler();
 
@@ -33,7 +33,14 @@ namespace Exam1_MiniKindle
 
             // Creates controller.
             Controller controller = new Controller();
-            
+
+            FlipPageHandler fpHand = controller.FlipPage;
+            BookMkHandler bmHand = controller.Bookmark;
+            DisplayPageHandler dpHand = controller.DisplayPage;
+            CurrentPageMarkedHandler cpmHand = controller.CurrentPageMarked;
+            GetTitleAuthorHandler taHand = controller.GetBookTitleAuthor;
+
+
             // Loads books into library
             controller.LoadLibrary("Books");
 
@@ -50,6 +57,7 @@ namespace Exam1_MiniKindle
 
             bookView.RefreshPage();
             //*/
+
             Application.Run(libView);
         }
     }

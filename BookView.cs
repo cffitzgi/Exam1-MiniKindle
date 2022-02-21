@@ -12,9 +12,6 @@ namespace Exam1_MiniKindle
 {
     public partial class BookView : Form
     {
-        //TODO: Shouldn't we replace this with the Controller like in Lab03???
-        //Book curBook;
-        Controller controller;
 
         FlipPageHandler fpHand;
 
@@ -22,24 +19,20 @@ namespace Exam1_MiniKindle
 
         DisplayPageHandler dpHand;
 
-
-        // New Handlers Added
         CurrentPageMarkedHandler cpmHand;
 
         GetTitleAuthorHandler taHand;
 
 
-        public BookView(Controller c)
+        public BookView(DisplayPageHandler dp, GetTitleAuthorHandler ta, FlipPageHandler fp, BookMkHandler bm, CurrentPageMarkedHandler cpm)
         {
             InitializeComponent();
 
-            controller = c;
-
-            dpHand = controller.DisplayPage;
-            taHand = controller.GetBookTitleAuthor;
-            fpHand = controller.FlipPage;
-            bmHand = controller.BookMark;
-            cpmHand = controller.CurrentPageMarked;
+            dpHand = dp;
+            taHand = ta;
+            fpHand = fp;
+            bmHand = bm;
+            cpmHand = cpm;
 
         }
         
