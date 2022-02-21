@@ -9,6 +9,9 @@ namespace Exam1_MiniKindle
 {
     public class Library
     {
+        /// <summary>
+        /// List containing books.
+        /// </summary>
         private List<Book> library;
 
         public Library()
@@ -16,22 +19,40 @@ namespace Exam1_MiniKindle
             library = new List<Book>();
         }
 
+        /// <summary>
+        /// Loads the books contained in the path directory into this library instance.
+        /// </summary>
+        /// <param name="path">Directory where books are located.</param>
         public void LoadLibrary(String path)
         {
-            string[] filenames = Directory.GetFiles(path);
-            foreach (string fn in filenames)
+            String[] filenames = Directory.GetFiles(path);
+            int n = 0;
+            foreach (String fn in filenames)
             {
+                if (n > 25) break;
+
                 Book newBook = new Book();
                 newBook.LoadBook(fn);
                 library.Add(newBook);
+
+                n++;
             }
         }
 
+        /// <summary>
+        /// Selects the book at the index given.
+        /// </summary>
+        /// <param name="i">Index of book to return.</param>
+        /// <returns>Book object selected.</returns>
         public Book SelectBook(int i)
         {
             return library[i];
         }
 
+        /// <summary>
+        /// Returns a list of all the library's Book Title by Author.
+        /// </summary>
+        /// <returns>List of each Book's Title by Author.</returns>
         public List<String> Display()
         {
             List<string> listOfBookInfo = new List<string>();

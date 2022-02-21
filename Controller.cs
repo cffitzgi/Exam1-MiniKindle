@@ -52,6 +52,11 @@ namespace Exam1_MiniKindle
             currBook.AddRemBkMk();
         }
 
+        public int GetCurrentPage()
+        {
+            return currBook.GetCurrentPage();
+        }
+
         /// <summary>
         /// Checks whether the current page is already bookmarked.
         /// </summary>
@@ -70,11 +75,19 @@ namespace Exam1_MiniKindle
             currBook = library.SelectBook(i);
         }
 
+        /// <summary>
+        /// Loads the books in the path directory into the library instance.
+        /// </summary>
+        /// <param name="path">Directory where books are located relative to execution.</param>
         public void LoadLibrary(String path)
         {
             library.LoadLibrary(path);
         }
 
+        /// <summary>
+        /// Gets the book titles contained within the library instance.
+        /// </summary>
+        /// <returns>List of Book titles and authors as strings.</returns>
         public List<String> DisplayLibrary()
         {
             return library.Display();

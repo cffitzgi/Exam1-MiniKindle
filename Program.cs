@@ -12,6 +12,8 @@ namespace Exam1_MiniKindle
 
     public delegate String DisplayPageHandler();
 
+    public delegate int GetCurrentPageHandler();
+
     public delegate bool CurrentPageMarkedHandler();
 
     public delegate String GetTitleAuthorHandler();
@@ -35,11 +37,16 @@ namespace Exam1_MiniKindle
             // Creates controller.
             Controller controller = new Controller();
 
+            // Delegates for days
+            // BookView Delegates
             DisplayPageHandler dpHand = controller.DisplayPage;
-            GetTitleAuthorHandler taHand = controller.GetBookTitleAuthor;
+            GetTitleAuthorHandler taHand = controller.GetBookTitleAuthor;   // Also used by LibraryView
             FlipPageHandler fpHand = controller.FlipPage;
             BookMkHandler bmHand = controller.Bookmark;
             CurrentPageMarkedHandler cpmHand = controller.CurrentPageMarked;
+            GetCurrentPageHandler cpHand = controller.GetCurrentPage;
+
+            // LibraryView Delegates
             DisplayLibraryHandler dlHand = controller.DisplayLibrary;
             SelectBookHandler sbHand = controller.SelectBook;
 
@@ -47,7 +54,7 @@ namespace Exam1_MiniKindle
             // Loads books into library
             controller.LoadLibrary("Books");
 
-            LibraryView libView = new LibraryView(dpHand, taHand, fpHand, bmHand, cpmHand, dlHand, sbHand);
+            LibraryView libView = new LibraryView(dpHand, taHand, fpHand, bmHand, cpmHand, cpHand, dlHand, sbHand);
 
             Application.Run(libView);
         }

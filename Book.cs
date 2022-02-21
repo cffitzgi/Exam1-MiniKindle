@@ -26,7 +26,7 @@ namespace Exam1_MiniKindle
             bookmarks = new List<int>();
         }
 
-// New Method that loads in books from files
+
         /// <summary>
         /// Loads book from saved .txt file.
         /// </summary>
@@ -88,6 +88,10 @@ namespace Exam1_MiniKindle
             }
         }
 
+        /// <summary>
+        /// Checks if the current page is already bookmarked.
+        /// </summary>
+        /// <returns>True if the current page is bookmarked.</returns>
         public bool CurrentPageMarked()
         {
             for (int i = 0; i < bookmarks.Count; i++)
@@ -100,6 +104,10 @@ namespace Exam1_MiniKindle
             return false;
         }
 
+        /// <summary>
+        /// Turns the page depending on the direction.
+        /// </summary>
+        /// <param name="dir">True goes forward, false goes backwards.</param>
         public void FlipPage(bool dir)
         {
             if (dir && currentPage < pages.Count - 1)
@@ -112,12 +120,28 @@ namespace Exam1_MiniKindle
             }
         }
 
+        /// <summary>
+        /// Returns the page's contents as text.
+        /// </summary>
+        /// <returns>The page's contents as a String object.</returns>
         public String DisplayPage()
         {
             return pages[currentPage];
         }
 
-        
+        /// <summary>
+        /// Gets the current page number.
+        /// </summary>
+        /// <returns>Current page number as an int.</returns>
+        public int GetCurrentPage()
+        {
+            return currentPage + 1;
+        }
+
+        /// <summary>
+        /// Overrides ToString to return the book's Title by Author
+        /// </summary>
+        /// <returns>Book Title by Author as String object.</returns>
         public override String ToString()
         {
             return String.Format("{0} by {1}", title, author);
