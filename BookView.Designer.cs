@@ -40,52 +40,48 @@ namespace Exam1_MiniKindle
             // 
             // PageDisplay
             // 
-            this.PageDisplay.Location = new System.Drawing.Point(16, 48);
-            this.PageDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PageDisplay.Location = new System.Drawing.Point(12, 39);
             this.PageDisplay.Multiline = true;
             this.PageDisplay.Name = "PageDisplay";
             this.PageDisplay.ReadOnly = true;
-            this.PageDisplay.Size = new System.Drawing.Size(633, 521);
+            this.PageDisplay.Size = new System.Drawing.Size(476, 424);
             this.PageDisplay.TabIndex = 0;
             // 
             // buttonNextPage
             // 
-            this.buttonNextPage.Location = new System.Drawing.Point(431, 583);
-            this.buttonNextPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonNextPage.Location = new System.Drawing.Point(323, 474);
             this.buttonNextPage.Name = "buttonNextPage";
-            this.buttonNextPage.Size = new System.Drawing.Size(220, 50);
+            this.buttonNextPage.Size = new System.Drawing.Size(165, 41);
             this.buttonNextPage.TabIndex = 1;
             this.buttonNextPage.Text = ">>";
             this.buttonNextPage.UseVisualStyleBackColor = true;
+            this.buttonNextPage.Click += new System.EventHandler(this.buttonNextPage_Click);
             // 
             // buttonPreviousPage
             // 
-            this.buttonPreviousPage.Location = new System.Drawing.Point(16, 583);
-            this.buttonPreviousPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPreviousPage.Location = new System.Drawing.Point(12, 474);
             this.buttonPreviousPage.Name = "buttonPreviousPage";
-            this.buttonPreviousPage.Size = new System.Drawing.Size(220, 50);
+            this.buttonPreviousPage.Size = new System.Drawing.Size(165, 41);
             this.buttonPreviousPage.TabIndex = 2;
             this.buttonPreviousPage.Text = "<<";
             this.buttonPreviousPage.UseVisualStyleBackColor = true;
             // 
             // buttonBookmark
             // 
-            this.buttonBookmark.Location = new System.Drawing.Point(332, 583);
-            this.buttonBookmark.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonBookmark.Location = new System.Drawing.Point(217, 474);
             this.buttonBookmark.Name = "buttonBookmark";
-            this.buttonBookmark.Size = new System.Drawing.Size(91, 50);
+            this.buttonBookmark.Size = new System.Drawing.Size(68, 41);
             this.buttonBookmark.TabIndex = 3;
-            this.buttonBookmark.Text = "Add Bookmark";
+            this.buttonBookmark.Text = "Bookmark";
             this.buttonBookmark.UseVisualStyleBackColor = true;
             // 
             // labelBookTitle
             // 
             this.labelBookTitle.AutoSize = true;
             this.labelBookTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBookTitle.Location = new System.Drawing.Point(16, 11);
-            this.labelBookTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBookTitle.Location = new System.Drawing.Point(12, 9);
             this.labelBookTitle.Name = "labelBookTitle";
-            this.labelBookTitle.Size = new System.Drawing.Size(145, 31);
+            this.labelBookTitle.Size = new System.Drawing.Size(118, 26);
             this.labelBookTitle.TabIndex = 5;
             this.labelBookTitle.Text = "Book Title";
             // 
@@ -93,29 +89,27 @@ namespace Exam1_MiniKindle
             // 
             this.labelAuthor.AutoSize = true;
             this.labelAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAuthor.Location = new System.Drawing.Point(441, 20);
-            this.labelAuthor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAuthor.Location = new System.Drawing.Point(331, 16);
             this.labelAuthor.Name = "labelAuthor";
-            this.labelAuthor.Size = new System.Drawing.Size(116, 20);
+            this.labelAuthor.Size = new System.Drawing.Size(99, 17);
             this.labelAuthor.TabIndex = 6;
             this.labelAuthor.Text = "Author Person";
             // 
             // buttonLibrary
             // 
             this.buttonLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLibrary.Location = new System.Drawing.Point(581, 9);
-            this.buttonLibrary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLibrary.Location = new System.Drawing.Point(436, 7);
             this.buttonLibrary.Name = "buttonLibrary";
-            this.buttonLibrary.Size = new System.Drawing.Size(69, 36);
+            this.buttonLibrary.Size = new System.Drawing.Size(52, 29);
             this.buttonLibrary.TabIndex = 7;
             this.buttonLibrary.Text = "🏠";
             this.buttonLibrary.UseVisualStyleBackColor = true;
             // 
-            // ReaderView
+            // BookView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 641);
+            this.ClientSize = new System.Drawing.Size(500, 521);
             this.Controls.Add(this.buttonLibrary);
             this.Controls.Add(this.labelAuthor);
             this.Controls.Add(this.labelBookTitle);
@@ -123,8 +117,7 @@ namespace Exam1_MiniKindle
             this.Controls.Add(this.buttonPreviousPage);
             this.Controls.Add(this.buttonNextPage);
             this.Controls.Add(this.PageDisplay);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "ReaderView";
+            this.Name = "BookView";
             this.Text = "Reader";
             this.ResumeLayout(false);
             this.PerformLayout();

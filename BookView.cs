@@ -12,7 +12,9 @@ namespace Exam1_MiniKindle
 {
     public partial class BookView : Form
     {
-        Book curBook;
+        //TODO: Shouldn't we replace this with the Controller like in Lab03???
+        //Book curBook;
+        Controller controller;
 
         FlipPageHandler fpHand;
 
@@ -24,13 +26,24 @@ namespace Exam1_MiniKindle
         {
             InitializeComponent();
 
-            dpHand = curBook.DisplayPage;
+            dpHand = controller.DisplayPage;
+            fpHand = curBook.FlipPage;
+            bmHand = curBook.AddRemBkMk;
         }
-    
+        
+        public void SetController(Controller c)
+        {
+            controller = c;
+        }
         
         public void Refresh()
         {
-            dpHand();
+            PageDisplay.Text = dpHand();
+        }
+
+        private void buttonNextPage_Click(object sender, EventArgs e)
+        {
+            fpHand(true);
         }
     }
 }

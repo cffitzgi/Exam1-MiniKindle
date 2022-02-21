@@ -21,6 +21,8 @@ namespace Exam1_MiniKindle
             dpHand = currBook.DisplayPage;
         }
 
+        public 
+
         public void FlipPage(bool dir)
         {
             currBook.FlipPage(dir);

@@ -10,7 +10,7 @@ namespace Exam1_MiniKindle
 
     public delegate void RefresherDel();
 
-    public delegate void BookMkHandler();
+    public delegate void BookMkHandler(int p);
 
     public delegate string DisplayPageHandler();
 
