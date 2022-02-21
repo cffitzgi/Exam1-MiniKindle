@@ -51,7 +51,7 @@ namespace Exam1_MiniKindle
         /// <summary>
         /// Toggles bookmark for current page.
         /// </summary>
-        public void BookMark()
+        public void Bookmark()
         {
             currBook.AddRemBkMk();
         }
